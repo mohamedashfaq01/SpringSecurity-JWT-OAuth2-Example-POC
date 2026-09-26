@@ -16,7 +16,7 @@ import java.util.List;
 public class SessionService {
 
     private final SessionRepository sessionRepository;
-    private final int SESSION_LIMIT = 2;
+    private final int SESSION_LIMIT = 1;
 
     public void generateNewSession(User user, String refreshToken) {
         List<Session> userSessions = sessionRepository.findByUser(user);
